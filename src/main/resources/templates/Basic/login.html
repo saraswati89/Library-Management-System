@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="Basic/base::layout(~{::section})">
+
+<body>
+	<section class="login">
+
+		<!-- JQUERY For Hiding Success Message -->
+		<script type="text/javascript"
+			src="/webjars/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				var hideError = function() {
+					$(".alert").hide();
+				};
+				setTimeout(hideError, 5000);
+			});
+		</script>
+
+		<!-- Success Message -->
+		<div th:if="${session.message}"
+			th:classappend="${session.message.type}" class="alert locAlert"
+			id="successMessage" role="alert">
+			<p th:text="${session.message.text}"></p>
+
+			<th:block th:text="${#session.removeAttribute('message')}"></th:block>
+		</div>
+
+		<div class="login_box">
+			<div class="left">
+				<div class="top_link">
+					<a th:href="@{/app/home}"><img
+						src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download"
+						alt="">Return home</a>
+				</div>
+				<div class="contact">
+
+					<form th:action="@{verify}" method="post" th:object="${admin}">
+						<h3>SIGN IN</h3>
+<div th:if="${param.error}"  class="text-danger"> Invalid Username or Password </div>
+						<!-- User name -->
+						<input th:value="${admin.username}" name="username" type="text"
+							placeholder="USERNAME">
+
+						<!-- Password -->
+						<input name="password" type="password" placeholder="PASSWORD">
+						<button type="submit" class="submit">Login</button>
+					</form>
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-text">
+
+					<div class="text-center">
+						<h3>LIBRARY MANAGEMENT SYSTEM</h3>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+</body>
+</html>
