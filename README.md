@@ -1,20 +1,35 @@
-# Library Management System 📚
-A Full Stack Web Application built with Spring Boot + MySQL + React.js to manage library operations.
+# 🚀 Library Management System
 
-## 🔹 Tech Stack
+## Overview
+Full Stack application to manage library operations (books, users, issue/return).
+
+## Tech Stack
 - Backend: Spring Boot, JPA/Hibernate, REST APIs
-- Frontend: React.js, HTML, CSS
-- Database: MySQL
-- Tools: Maven, Git, Postman
+- Frontend: (React.js / HTML & CSS) — mention what you used
+- DB: MySQL
+- Tools: Maven, Postman, Git
 
-## 🔹 Features
-- Role-based login (Admin / Student)
-- Book issue/return tracking
-- User management
-- Responsive UI
+## Features
+- Role-based authentication (Admin / Student)
+- Book CRUD, Issue/Return workflows
+- Dashboard & Reports
 
-## 🔹 Setup
-1. Clone repo
-2. Backend → `mvn spring-boot:run`
-3. Frontend → `npm start`
-4. MySQL → Import `library.sql`
+## Setup
+1. Clone:
+   git clone https://github.com/saraswati89/Library-Management-System.git
+2. Backend:
+   cd backend
+   mvn spring-boot:run
+3. Frontend (if present):
+   cd frontend
+   npm install
+   npm start
+4. DB:
+   Create database `library_db` and import `database/schema.sql`
+
+## Screenshots
+![Login](docs/screenshots/login.png)
+![Dashboard](docs/screenshots/dashboard.png)
+
+## License
+MIT / Academic use
