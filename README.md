@@ -1,4 +1,4 @@
-# 🚀 Library Management System
+#  Library Management System
 
 ## Overview
 Full Stack application to manage library operations (books, users, issue/return).
@@ -27,9 +27,3 @@ Full Stack application to manage library operations (books, users, issue/return)
 4. DB:
    Create database `library_db` and import `database/schema.sql`
 
-## Screenshots
-![Login](docs/screenshots/login.png)
-![Dashboard](docs/screenshots/dashboard.png)
-
-## License
-MIT / Academic use
