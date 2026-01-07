@@ -32,3 +32,4 @@ JPA/Hibernate, and MySQL.
 ---
 
 ## 🔹 Project Structure
+Improved README with complete project documentation
