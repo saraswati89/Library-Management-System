@@ -1,29 +1,34 @@
-#  Library Management System
+# 📚 Library Management System
 
-## Overview
-Full Stack application to manage library operations (books, users, issue/return).
+## 🔹 Overview
+Library Management System is a Full Stack Java application developed
+to automate and manage core library operations such as book management,
+user management, and book issue/return workflows.
 
-## Tech Stack
-- Backend: Spring Boot, JPA/Hibernate, REST APIs
-- Frontend: (React.js / HTML & CSS) — mention what you used
-- DB: MySQL
-- Tools: Maven, Postman, Git
+The system provides role-based access control where **Admin** manages
+books and users, and **Students** can search, issue, and return books.
+This project demonstrates real-world usage of Spring Boot, REST APIs,
+JPA/Hibernate, and MySQL.
 
-## Features
-- Role-based authentication (Admin / Student)
-- Book CRUD, Issue/Return workflows
-- Dashboard & Reports
+---
 
-## Setup
-1. Clone:
-   git clone https://github.com/saraswati89/Library-Management-System.git
-2. Backend:
-   cd backend
-   mvn spring-boot:run
-3. Frontend (if present):
-   cd frontend
-   npm install
-   npm start
-4. DB:
-   Create database `library_db` and import `database/schema.sql`
+## 🔹 Tech Stack
+- **Backend:** Java, Spring Boot, Spring Data JPA, REST APIs
+- **Security:** Spring Security (Role-based Authentication)
+- **Database:** MySQL
+- **Build Tool:** Maven
+- **Tools:** Postman, Git, GitHub
 
+---
+
+## 🔹 Features
+- Role-based Authentication (Admin / Student)
+- Book CRUD Operations
+- Issue & Return Book Workflow
+- User Management
+- RESTful API Design
+- MySQL Database Integration
+
+---
+
+## 🔹 Project Structure
