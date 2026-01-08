@@ -1,35 +1,32 @@
-# 📚 Library Management System
+## Library Management System
 
-## 🔹 Overview
-Library Management System is a Full Stack Java application developed
-to automate and manage core library operations such as book management,
-user management, and book issue/return workflows.
+A Spring Boot based Library Management System with session-based authentication.
 
-The system provides role-based access control where **Admin** manages
-books and users, and **Students** can search, issue, and return books.
-This project demonstrates real-world usage of Spring Boot, REST APIs,
-JPA/Hibernate, and MySQL.
+## Tech Stack
+- Java
+- Spring Boot
+- Spring MVC
+- JPA / Hibernate
+- MySQL
+- Thymeleaf
+- Maven
 
----
+## Features
+- Admin Login (Session based authentication)
+- Add / Update / Delete Books
+- Issue and Return Books
+- Search Books
+- Fine Calculation
+- Dashboard with reports
 
-## 🔹 Tech Stack
-- **Backend:** Java, Spring Boot, Spring Data JPA, REST APIs
-- **Security:** Spring Security (Role-based Authentication)
-- **Database:** MySQL
-- **Build Tool:** Maven
-- **Tools:** Postman, Git, GitHub
+## Screenshots
+![Login](screenshots/login.png)
+![Dashboard](screenshots/dashboard.png)
+![Add Book](screenshots/addbook.png)
 
----
-
-## 🔹 Features
-- Role-based Authentication (Admin / Student)
-- Book CRUD Operations
-- Issue & Return Book Workflow
-- User Management
-- RESTful API Design
-- MySQL Database Integration
-
----
-
-## 🔹 Project Structure
-Improved README with complete project documentation
+## How to Run
+1. Clone the repository
+2. Create MySQL database `libraryms`
+3. Update database credentials in `application.properties`
+4. Run the project using Spring Boot
+5. Open `http://localhost:9096/app/login`
