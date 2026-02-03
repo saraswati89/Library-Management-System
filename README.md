@@ -27,11 +27,6 @@ A Spring Boot based Library Management System with session-based authentication.
 
 ![Add Book](./Screenshots/addbook.png)
 
-![Books Page](screenshots/books.png)
-
-![Issue Book Page](screenshots/issuebook.png)
-
-![Return Book Page](screenshots/returnbook.png)
 
 ## How to Run
 1. Clone the repository
